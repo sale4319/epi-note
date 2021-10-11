@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect } from 'react-redux-firebase';
 import NoteList from '../notes/NoteList';
-import Note from './Note';
 
 const Favorites = () => {
     console.log('Favorites')

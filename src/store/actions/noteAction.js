@@ -16,6 +16,24 @@ export const addNote = (note) => {
     }
 }
 
+export const updateNote = (note) => {
+    return(dispatch, getState, {getFirestore}) => {
+        const firestore = getFirestore()
+        firestore.collection('notes')
+            .doc(note.id)
+            .update({
+                title:note.title,
+                content:note.content
+            })
+            .then(() => {
+                console.log('edited the note successfully')
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }
+}
+
 export const deleteNote = (note) => {
     return(dispatch, getState, {getFirestore}) => {
         const firestore = getFirestore()

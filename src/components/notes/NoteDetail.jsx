@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase';
+import { useFirestoreConnect, isEmpty } from 'react-redux-firebase';
 import moment from 'moment';
 
 const NoteDetail = ( props ) => {
