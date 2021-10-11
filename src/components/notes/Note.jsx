@@ -32,12 +32,16 @@ const Note = ({ note }) => {
                     delete
                 </i>
             </div>
-            <Link to={"/note/" + note.id}>
-                <h5 className="black-text">{note.title}</h5>
-            </Link>
+                <Link to={`/note/${note.id}`}>
+                    <h5 className="black-text">{note.title}</h5>
+                </Link>
             <p className="truncate">{note.content}</p>
             <p className="orange-text">{moment(note.createdAt.toDate()).fromNow()}</p>
-            <div className="right-align"><i className="material-icons green-text">edit</i></div>
+            <div className="right-align">
+                <Link to={`/editfrom/${note.id}`}>
+                <i className="material-icons green-text">edit</i>
+                </Link>
+            </div>
         </div>
     )
 }
