@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import moment from 'moment';
 
 import { deleteNote, toggleFavorite } from '../../store/actions/noteAction';
@@ -31,7 +32,9 @@ const Note = ({ note }) => {
                     delete
                 </i>
             </div>
-            <h5 className="black-text">{note.title}</h5>
+            <Link to={"/note/" + note.id}>
+                <h5 className="black-text">{note.title}</h5>
+            </Link>
             <p className="truncate">{note.content}</p>
             <p className="orange-text">{moment(note.createdAt.toDate()).fromNow()}</p>
             <div className="right-align"><i className="material-icons green-text">edit</i></div>
