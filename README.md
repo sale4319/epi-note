@@ -5,4 +5,4 @@ CRUD notes application
 Frontend React, backend Firebase
 
 #### Preview
-TBD
+https://epi-note.netlify.app/
