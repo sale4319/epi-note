@@ -27,9 +27,11 @@ const EditForm = () => {
                 <h5 className="grey-text text-darken-3">Edit Note</h5>
                 <div className="input-field">
                     <input id="note_title" type="text" className="validate" {...bindTitle}/>
+                    <label className="active" htmlFor="note_title">Note Title</label>
                 </div>
                 <div className="input-field">
                     <textarea id="note_content" className="materialize-textarea" {...bindContent}/>
+                    <label className="active" htmlFor="note_title">Note Content</label>
                 </div>
                 <button className="btn blue">Update</button>
             </form>
