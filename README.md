@@ -1,8 +1,8 @@
-# Colorful notes
+### Colorful notes
 CRUD notes application
 
-## Project compostion
+### Project compostion
 Frontend React, backend Firebase
 
-## Preview
+### Preview
 TBD
