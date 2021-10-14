@@ -11,12 +11,14 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/favorites' component={Favorites} />
-        <Route path='/note/:id' component={NoteDetail} />
-        <Route path='/editfrom/:id' component={EditForm} />
-      </Switch>
+        <div className="container">
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/favorites' component={Favorites} />
+          <Route path='/note/:id' component={NoteDetail} />
+          <Route path='/editfrom/:id' component={EditForm} />
+        </Switch>
+      </div>
     </Router>
   );
 }
