@@ -11,7 +11,7 @@ const NoteDetail = ( props ) => {
     );
 
     const noteMarkup = isEmpty(note) ? (
-        <div className="container section">
+        <div className="column">
             <div className="card note z-depth-0">
                 <div className="card-content">
                     <span className="card-title">
@@ -21,7 +21,7 @@ const NoteDetail = ( props ) => {
             </div>
          </div>
     ) : (
-        <div className="container section">
+        <div className="column">
             <div className="card note z-depth-0">
                 <div className="card-content">
                     <span className="card-title">{note.title}</span>

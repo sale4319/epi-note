@@ -17,7 +17,7 @@ const Favorites = () => {
     console.log('favnotes', favnotes);
 
     return (
-        <NoteList notes={favnotes} />
+            <div className="column"><NoteList notes={favnotes} /></div>
     )
 }
 
