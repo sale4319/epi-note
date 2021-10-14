@@ -10,15 +10,15 @@ import EditForm from './components/notes/EditForm';
 function App() {
   return (
     <Router>
-      <Navbar />
+        <Navbar />
         <div className="container">
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/favorites' component={Favorites} />
-          <Route path='/note/:id' component={NoteDetail} />
-          <Route path='/editfrom/:id' component={EditForm} />
-        </Switch>
-      </div>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/favorites' component={Favorites} />
+            <Route path='/note/:id' component={NoteDetail} />
+            <Route path='/editfrom/:id' component={EditForm} />
+          </Switch>
+        </div>
     </Router>
   );
 }
