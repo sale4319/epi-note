@@ -11,8 +11,8 @@ const Home = () => {
     return (
         <div>
             <div className="row center-align">
-                <div className="col s7"><Form /></div>
-                <div className="col s5"><NoteList notes={notes}/></div>
+                <div className="column"><Form /></div>
+                <div className="column"><NoteList notes={notes}/></div>
             </div>
         </div>
     )
